@@ -1,0 +1,41 @@
+<div id="wrap" class="customebody">
+    <div class="container" ng-controller="AuthCtrl">
+        <form role="form" class="form-horizontal col-lg-4 col-lg-offset-4" name="form" ng-submit="register()">
+            <div class="form-group" ng-class="{'has-error': form.mail.$dirty && form.mail.$invalid}">
+                <label class="control-label lebelcolor">E-mail:</label>
+                <input type="email" name="mail" class="form-control" placeholder="E-mail address" required ng-email="email"  ng-model="user.email" />
+                <span class="help-block" ng-show="form.mail.$dirty && form.mail.$error.required">Please provide your e-mail address, eg. me@example.org</span>
+                <span class="help-block" ng-show="form.mail.$dirty && form.mail.$error.email">The mail address you provided is not a valid mail address</span>
+            </div>
+            <div class="form-group" ng-class="{'has-error': form.username.$dirty && form.username.$invalid}">
+                <label class="control-label lebelcolor">Username:</label>
+                <input type="text" name="username" class="form-control" placeholder="Username" required maxlength="16" ng-model="user.username" />
+                <span class="help-block" ng-show="form.username.$dirty && form.username.$error.required">Please provide the username you would like to have</span>
+                <span class="help-block" ng-show="form.username.$dirty && form.username.$error.maxlength">Your username should be no longer than 16 characters</span>
+            </div>
+            <div class="form-group" ng-class="{'has-error': form.password.$dirty && form.password.$invalid}">
+                <label class="control-label lebelcolor">Password:</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" required ng-model="user.password" ng-pattern="passwordPattern" />
+                <span class="help-block" ng-show="form.password.$dirty && form.password.$error.required">Please enter a password</span>
+                <span class="help-block" ng-show="form.password.$dirty && form.password.$error.pattern">Your password should be at least 8 characters long, and contain an uppercase letter and a number</span>
+            </div>
+            <div class="form-group" ng-class="{'has-error': form.password2.$dirty && form.password2.$invalid}">
+                <label class="control-label lebelcolor">Repeat password:</label>
+                <input type="password" name="password2" class="form-control" ng-model="user.password2" placeholder="Repeat password" required ng-equals="user.password" />
+                <span class="help-block" ng-show="form.password2.$dirty && form.password2.$error.required">Please enter a password</span>
+                <span class="help-block" ng-show="form.password2.$dirty && form.password2.$error.equals">Passwords do not match</span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block btn-lg" value="Register">Register</button>
+            </div>
+        </form>
+    </div>
+    <div id="push"></div>
+</div>
+
+<div id="footer">
+    <div class="text-center">
+        <hr>
+        <p>Project for <a href="http://www.dcu.ie">DCU</a>.<br>Think-Smart ©2015</p>
+    </div>
+</div>

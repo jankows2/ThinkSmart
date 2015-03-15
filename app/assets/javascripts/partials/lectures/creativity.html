@@ -1,0 +1,167 @@
+<div id="Carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="Carousel" data-slide-to="1"></li>
+        <li data-target="Carousel" data-slide-to="2"></li>
+        <li data-target="Carousel" data-slide-to="3"></li>
+        <li data-target="Carousel" data-slide-to="4"></li>
+        <li data-target="Carousel" data-slide-to="5"></li>
+        <li data-target="Carousel" data-slide-to="6"></li>
+        <li data-target="Carousel" data-slide-to="7"></li>
+        <li data-target="Carousel" data-slide-to="8"></li>
+
+    </ol>
+    <div class="carousel-inner carouselFixedSize">
+        <div class="item active">
+            <p class="Main-text-In-Carousel col-md-8 col-md-offset-2">
+                Take a square and draw a straight line right across it. Draw several more lines in any arrangement
+                so that the lines all cross the square, and the square is divided into several regions. The task is
+                to colour the regions in such a way that adjacent regions are never coloured the same. (Regions having
+                only one point in common are not considered adjacent.) How few different colours are needed to colour
+                any such arrangement?
+            </p>
+        </div>
+        <div class="item">
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/firstBox_zpsimmvkbgn.png" class="img-responsive center-block img-Vertical-Align" alt="Get Started"/>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                Remember, always try an example (specialize) to see what is going on.
+                These 5 lines produce 13 regions. We know that We have to colour the regions
+                so that adjacent ones are different colours.
+            </p>
+        </div>
+        <div class="item ">
+            <p class="top-text col-md-8 col-md-offset-2">Here is one way using four colours:</p>
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/Secondbox_zps8i9m8z97.png"  class="img-responsive center-block img-Vertical-Align" alt="Sample filling"/></a>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                We want to find the minimum number of colours needed for any arrangement of lines.
+                Is four the minimum needed for this particular arrangement? Try to use only three colours.
+            </p>
+        </div>
+        <div class="item ">
+            <p class="top-text col-md-8 col-md-offset-2">Success!</p>
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/ThirdBox_zpsl16k9z1n.png" class="img-responsive center-block img-Vertical-Align" alt="Less and less"/></a>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                Lets try again with only two colours.
+            </p>
+        </div>
+        <div class="item ">
+            <p class="top-text col-md-8 col-md-offset-2">Success again!</p>
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/FourthBox_zpszso6r39j.png" class="img-responsive center-block img-Vertical-Align" alt="Only two colours"/>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                Obviously one colour is inadequate, so for this particular
+                arrangement, two colours is the minimum required.
+            </p>
+        </div>
+        <div class="item">
+            <p class="Main-text-In-Carousel col-md-8 col-md-offset-2">
+                As we made this successful attempt, did you noticed that once one region is coloured
+                it is easy to work out the rest. The regions adjacent to a coloured region should
+                immediately be allocated the other colour – an ‘adjacent’ rule. Now we conjecture that
+                every arrangement of regions can be coloured using only two colours (generalizing to
+                find what might be true). We dont have much evidence for this at the moment, so how can
+                we prove our statement?
+            </p>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                That's right! Specialize systematically.
+            </p>
+        </div>
+        <div class="item ">
+            <p class="top-text col-md-8 col-md-offset-2">One line:</p>
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/5box_zpshxw7rtll.png" class="img-responsive center-block img-Vertical-Align" alt=" One line rule"/>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                Two colours are enough.
+            </p>
+        </div>
+        <div class="item ">
+            <p class="top-text col-md-8 col-md-offset-2">Two lines:</p>
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/newtogether_zpsvcrblag8.png" class="img-responsive center-block img-Vertical-Align" alt=" two lines"/>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                Two colours are enough.
+            </p>
+        </div>
+        <div class="item ">
+            <p class="top-text col-md-8 col-md-offset-2">Three lines:</p>
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/threeBox_zpslk9gjhcy.png" class="img-responsive center-block img-Vertical-Align" alt=" three lines"/>
+            <p class="bottom-text col-md-8 col-md-offset-2">
+                As we do this systematically, looking at what happens as we add the new
+                line, we begin to see why two colours always suffice (generalizing to find why).
+                When we add a new line (say the third) some of the old regions get cut into two parts.
+            </p>
+        </div>
+    </div>
+<span class="left carousel-control" data-target="#Carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</span>
+<span class="right carousel-control" data-target="#Carousel" data-slide="next">
+   <span class="glyphicon glyphicon-chevron-right"></span>
+</span>
+</div>
+
+<div class="row page-color-div">
+    <div class="col-md-6 col-md-offset-3 text-center">
+        <p class="text-page ">
+            So what did we learn?
+        </p>
+    </div>
+</div>
+
+
+
+<div class="col-md-offset-1">
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Are you stuck? <span class="text-muted">Write down stuck!</span></h2>
+            <p class="lead">
+                This will help you to proceed, by encouraging you to write down why you are stuck. For example: </br>
+                I do not understand . . . </br>
+                I do not know what to do about . . . </br>
+                I cannot see how to . . . </br>
+                I cannot see why. . . </br>
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/Stuck_zpsgjvt4iy7.jpg" class="featurette-image img-responsive" alt="Suck"/>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/aga_zpscrpyiubm.jpg" class="featurette-image img-responsive" alt=" aha"/>
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">AHA! <span class="text-muted"> The aha moment.</span></h2>
+            <p class="lead">
+                Whenever an idea comes to you or you think you see something, write it down.
+                That way you will know later what the idea was.
+                Very often people have a good idea, but lose it
+                subsequently and cannot recall it. In any case, it
+                feels good to write down AHA! Follow it with: </br>
+                Try . . . </br> Maybe . . . </br>But why . . .
+            </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Reflect <span class="text-muted"> on what happened.</span></h2>
+            <p class="lead">
+                When you have done all that you can or wish to, take time to
+                reflect on what happened. Even if you do not feel that you
+                got very far, it helps to write up what you have done so that
+                you can return to it freshly and efficiently at some later date.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img src="http://i1302.photobucket.com/albums/ag137/sebastian_jankowski1/reflect-small_zpsqkl9gvqp.png" class="featurette-image img-responsive"  border="0" alt=" reflect"/>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+</div>

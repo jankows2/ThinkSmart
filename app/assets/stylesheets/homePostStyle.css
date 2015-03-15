@@ -1,0 +1,24 @@
+/*
+*   Created by Sebastian
+*
+*   Some custom css loaded from different stylesheets
+*/
+
+.pageColor{
+    background-color: #204d74;
+}
+
+.textRoom{
+    text-align: center;
+    color: #000000;
+}
+
+.glypUser{
+    color: #fff;
+    font-size: 3.0em;
+
+}
+
+.table{
+    background-color: #fff;
+}

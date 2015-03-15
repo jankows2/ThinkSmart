@@ -1,0 +1,66 @@
+/*
+*   Created by Sebastian
+*
+*   Stylesheets for creativity page
+*
+*   Some default bootstrap was override
+*/
+
+
+
+.Main-text-In-Carousel{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.top-text{
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+.bottom-text{
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text-page{
+    font-size: 50px;
+    text-align: center;
+    color: #636363;
+
+}
+
+.text-footer{
+    font-size: 20px;
+    text-align: center;
+    color: #636363;
+}
+
+.page-color-div{
+    background-color: #fff;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.page-color-div-orange{
+    background-color: #f39c12;
+    padding-top: 200px;
+}
+
+
+/* Fix the size of the carousel to 400px always*/
+.carouselFixedSize{
+    height: 500px;
+    background-color: #636363;
+}
+
+.img-Vertical-Align{
+    padding-top: 30px;
+}
+
+

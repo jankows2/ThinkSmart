@@ -1,0 +1,41 @@
+<div class="customebody" id="wrap">
+    <div class="container">
+        <div class="col-lg-6 col-lg-offset-3">
+
+            <form class="form-signin" name="myForm" ng-submit="login()">
+                <h2 class="form-signin-heading csth2">Please sign in</h2>
+
+
+                <label class="sr-only">Email address</label>
+                <input type="email" class="form-control" ng-minlength="1" ng-maxlength="128" placeholder="Email address" ng-model="user.email">
+
+                <label class="sr-only">Password</label>
+                <input type="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+
+                <div class="checkbox remember">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit" value="Log In" ng-href="#/_dashboard">Sign in</button>
+
+                <a class="btn btn-lg btn-primary btn-block" type="submit" ng-href="#/register">Create Account</a>
+            </form>
+
+        </div>
+
+    </div>
+    <div id="push"></div>
+</div>
+
+
+
+
+
+<div id="footer">
+    <div class="text-center">
+        <hr>
+        <p>Project for <a href="http://www.dcu.ie">DCU</a>.<br>Think-Smart ©2015</p>
+    </div>
+</div>

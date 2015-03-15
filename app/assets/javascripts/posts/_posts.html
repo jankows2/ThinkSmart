@@ -1,0 +1,47 @@
+
+
+
+<div class="row pageColor ">
+    <h3 class="headingsPost">
+        <span ng-hide="post.link">
+          {{post.title}}
+        </span>
+    </h3>
+    <div class="panel panel-default col-md-6 col-md-offset-3">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr>
+                <th class="textRoom">User</th>
+                <th class="textRoom">Content</th>
+                <th class="textRoom">Upvotes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="textRoom" ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+                <td><a class="glyphicon glyphicon-user"></a> {{post.user.username}}</td>
+                <td>{{comment.body}}</td>
+                <td><a class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></a> {{comment.upvotes}}</td>
+            </tr>
+            <tr ng-if="body">
+                <td><a class="glyphicon glyphicon-user"></a> {{post.user.username}}</td>
+                <td>{{body}}</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="col-md-6 col-md-offset-3">
+    <form ng-submit="addComment()">
+        <h3>Add a new comment</h3>
+        <div class="form-group">
+
+            <input type="text" class="form-control input-large" placeholder="Comment" ng-model="body"> </input>
+            <button type="submit" class="btn btn-warning">Post</button>
+        </div>
+    </form>
+</div>
+
+
+

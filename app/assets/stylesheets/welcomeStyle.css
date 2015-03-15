@@ -1,0 +1,80 @@
+/*
+* Created By Sebastian 3/3/2015
+*
+* Style for _welcome page / override some default bootstrap properties
+*
+*/
+
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    font-family:Arial,sans-serif;
+}
+
+h1{
+    font-size:50px;
+}
+
+/* Position text and button on center
+
+   Also defines high of top layer (singType)
+*/
+.textPos{
+    vertical-align: middle;
+    width:100%;
+    padding-top:4%;
+    text-align:center;
+}
+
+.signType h1{
+    font-size:80px;
+    -webkit-text-stroke: 1px rgba(f,f,f,0.1);
+    color:#fff;
+    margin-left:-5px;
+    margin-bottom:5px;
+    text-transform:uppercase;
+}
+
+.signType .lead{
+    color: #fff;
+    font-size:25px;
+}
+
+.signType{
+    height: 80%;
+}
+
+.signMiddleType{
+    color:#fff;
+    font-size:50px;
+    text-transform:uppercase;
+}
+
+.alt{
+    background-color: #3498db;
+}
+
+
+/*
+   Backgorund shades
+*/
+.backShade {
+    padding: 120px 0;
+    background-color:#3498db;
+}
+
+.testFrame{
+    color: #3498db;
+    background-color: #3498db;
+}
+
+.backShade .panel {
+    background-color:transparent;
+}
+
+.bright {
+    background: #2ecc71;
+    color:#fff;
+}

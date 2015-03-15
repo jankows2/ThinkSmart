@@ -1,0 +1,209 @@
+/*
+*   Created by Sebastian
+*
+*   Lectures style sheet
+*/
+.headings{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #fff;
+    font-size:80px;
+    font-weight: 900;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.subHeadings{
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc,
+    0 1px 0 #c9c9c9,
+    0 2px 0 #bbb,
+    0 2px 0 #b9b9b9,
+    0 3px 0 #aaa,
+    0 3px 1px rgba(0,0,0,.1),
+    0 0 3px rgba(0,0,0,.1),
+    0 1px 2px rgba(0,0,0,.3),
+    0 1px 2px rgba(0,0,0,.2),
+    0 3px 5px rgba(0,0,0,.25),
+    0 5px 5px rgba(0,0,0,.2),
+    0 5px 5px rgba(0,0,0,.15);
+}
+
+
+.text{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+
+}
+
+.textDiv{
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.divBox{
+    height: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: #204d74;
+    -webkit-box-shadow: inset 0px 0px 129px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: inset 0px 0px 129px 0px rgba(0,0,0,0.33);
+    box-shadow: inset 0px 0px 129px 0px rgba(0,0,0,0.33);
+}
+
+.textSpace{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 150px;
+}
+
+span.glyphicon-question-sign {
+    font-size: 3.0em;
+    color: #fff;
+
+}
+
+span.glyphicon-pencil{
+    color: #fff;
+    font-size: 3.0em;
+}
+
+span.glyphicon-search{
+    color: #fff;
+    font-size: 3.0em;
+}
+
+span.glyphicon-zoom-in{
+    color: #fff;
+    font-size: 3.0em;
+
+}
+
+.glyphiconTopSpacing{
+    padding-top: 100px;
+}
+
+.glyphiconSideSpacing{
+    padding-right: 125px;
+}
+
+/* Different styling due to page color change */
+.divTwo{
+    background-color: #fff;
+    padding-bottom: 200px;
+
+}
+
+.divBoxTwo{
+    height: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 100px;
+
+}
+
+.textTwo{
+    color: #204d74;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+.quoteType{
+    font-style: oblique;
+    color: #2980b9;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+.quotePos{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.divBorder{
+    margin-top: 50px;
+    border-top: inset;
+    border-width: 1px;
+}
+
+blockquote {
+    border-left: none;
+}
+
+.img{
+    max-width: 250px;
+    max-height: 150px;
+    margin-top: -50px;
+}
+.imgSolution{
+    width: auto;
+    height: auto;
+    margin-top: -200px;
+
+}
+
+/*New div decleration again due to color change*/
+
+.divThree{
+
+    background-color: #fff;
+    padding-bottom: 200px;
+}
+
+.divFour{
+    background-color: #f39c12;
+    padding-bottom: 100px;
+}
+
+/*Light Bulb animation*/
+
+.animation {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+img.active {
+    display: inline;
+}
+
+.animation.bulb img {
+    margin-top: -170px;
+}
+
+img {
+    display: none;
+}
+
+.bulbSpacing{
+    padding-top: 200px;
+}
