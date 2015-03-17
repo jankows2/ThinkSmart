@@ -23,7 +23,7 @@ angular.module('thinkSmart')
 
                 $scope.$on('devise:logout', function (e, user){
                     $scope.user = {};
-                    $location.path('/home')
+                    $location.path('/welcome-page')
 
                 });
 

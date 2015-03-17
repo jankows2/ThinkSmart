@@ -7,9 +7,15 @@ angular.module('thinkSmart', [
 .config(['$stateProvider','$urlRouterProvider',
 function($stateProvider, $urlRouterProvider) {
 
+
   $stateProvider
     .state('/',{
       url: '/',
+      templateUrl: 'Welcome-page/_welcome.html',
+      controller: 'MainCtrl'
+    })
+    .state('welcome-page',{
+      url: '/welcome-page',
       templateUrl: 'Welcome-page/_welcome.html',
       controller: 'MainCtrl'
     })
@@ -61,30 +67,8 @@ function($stateProvider, $urlRouterProvider) {
         }]
     })
 
-    // Routes for Partials exams page's
-    .state('examView', {
-      url: '/examView',
-      templateUrl: 'partials/exam/examView.html',
-      controller: 'AuthCtrl'
-    })
-    .state('exam1', {
-      url: '/exam1',
-      templateUrl: 'partials/exam/exam1.html',
-      controller: 'AuthCtrl'
-    })
-    .state('exam2', {
-      url: '/exam2',
-      templateUrl: 'partials/exam/exam2.html',
-      controller: 'AuthCtrl'
-    })
-
 
     // Routes for Partials Lectures page's
-    .state('overview', {
-        url: '/overview',
-        templateUrl: 'partials/lectures/overview.html',
-        controller: 'AuthCtrl'
-    })
     .state('beginning', {
       url: '/beginning',
       templateUrl: 'partials/lectures/beginning.html',
@@ -95,11 +79,7 @@ function($stateProvider, $urlRouterProvider) {
           templateUrl: 'partials/lectures/creativity.html',
           controller: 'AuthCtrl'
       })
-    .state('problemSolving', {
-      url: '/problemSolving',
-      templateUrl: 'partials/lectures/problemSolving.html',
-      controller: 'AuthCtrl'
-    })
+
 
     //Routes for Partials Problems
     .state('problem1', {
@@ -118,30 +98,8 @@ function($stateProvider, $urlRouterProvider) {
       controller: 'AuthCtrl'
     })
 
-    // Routes for Partials Lectures2 page's
-    .state('overviewTwo', {
-      url: '/overviewTwo',
-      templateUrl: 'partials/lectures2/overviewTwo.html',
-      controller: 'AuthCtrl'
-    })
-    .state('criticalThinking', {
-      url: '/criticalThinking',
-      templateUrl: 'partials/lectures2/criticalThinking.html',
-      controller: 'AuthCtrl'
-    })
-    .state('problemSolving2', {
-      url: '/problemSolving2',
-      templateUrl: 'partials/lectures2/problemSolving2.html',
-      controller: 'AuthCtrl'
-    })
-
-
     // Routes for Partials Quiz page's
-    .state('quizView', {
-        url: '/quizView',
-        templateUrl: 'partials/quiz/quizView.html',
-        controller: 'AuthCtrl'
-    })
+
     .state('createQuiz', {
       url: '/createQuiz',
       templateUrl: 'partials/quiz/createQuiz.html',
@@ -151,15 +109,8 @@ function($stateProvider, $urlRouterProvider) {
       url: '/takeQuiz',
       templateUrl: 'partials/quiz/takeQuiz.html',
       controller: 'AuthCtrl'
-    })
-
-
-    // Routes for Forum posts
-    .state('post1', {
-        url: '/post1',
-        templateUrl: 'partials/quiz/createQuiz.html',
-        controller: 'AuthCtrl'
     });
+
 
     $urlRouterProvider.otherwise('/');
 }]);

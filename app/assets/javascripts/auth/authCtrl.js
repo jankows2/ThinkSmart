@@ -20,6 +20,7 @@ angular.module("password.directives", []).directive("ngEquals", function() {
     return directive;
 });
 
+
 angular.module('thinkSmart')
     .controller('AuthCtrl', [
         '$scope',

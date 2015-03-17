@@ -200,7 +200,7 @@ img.active {
     margin-top: -170px;
 }
 
-img {
+.imgHide{
     display: none;
 }
 

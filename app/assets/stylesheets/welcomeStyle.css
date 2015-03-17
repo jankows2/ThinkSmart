@@ -28,6 +28,43 @@ h1{
     text-align:center;
 }
 
+.subHeadingsWelcome{
+    color: #2980b9;
+    font-style: italic;
+    text-align: left;
+    text-shadow: 0 1px 0 #525252,
+    0 1px 0 #575757,
+    0 2px 0 #414141,
+    0 2px 0 #484848,
+    0 3px 0 #3c3c3c,
+    0 3px 1px rgba(0,0,0,.1),
+    0 0 3px rgba(0,0,0,.1),
+    0 1px 2px rgba(0,0,0,.3),
+    0 1px 2px rgba(0,0,0,.2),
+    0 3px 5px rgba(0,0,0,.25),
+    0 5px 5px rgba(0,0,0,.2),
+    0 5px 5px rgba(0,0,0,.15);
+}
+
+.sub-main-heading{
+    color: #fff;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 0 1px 0 #ccc,
+    0 1px 0 #c9c9c9,
+    0 1px 0 #bbb,
+    0 1px 0 #b9b9b9,
+    0 2px 0 #aaa,
+    0 2px 1px rgba(0,0,0,.1),
+    0 0 2px rgba(0,0,0,.1),
+    0 1px 1px rgba(0,0,0,.3),
+    0 1px 1px rgba(0,0,0,.2),
+    0 1px 3px rgba(0,0,0,.25),
+    0 3px 3px rgba(0,0,0,.2),
+    0 3px 3px rgba(0,0,0,.15);
+}
+
 .signType h1{
     font-size:80px;
     -webkit-text-stroke: 1px rgba(f,f,f,0.1);
@@ -37,9 +74,10 @@ h1{
     text-transform:uppercase;
 }
 
-.signType .lead{
-    color: #fff;
-    font-size:25px;
+.sub-head-text{
+    color: #2980b9;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .signType{
@@ -47,13 +85,13 @@ h1{
 }
 
 .signMiddleType{
-    color:#fff;
-    font-size:50px;
-    text-transform:uppercase;
+    color: #2980b9;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .alt{
-    background-color: #3498db;
+    background-color: #2980b9;
 }
 
 
@@ -62,7 +100,7 @@ h1{
 */
 .backShade {
     padding: 120px 0;
-    background-color:#3498db;
+    background-color: #fff;
 }
 
 .testFrame{
@@ -75,6 +113,25 @@ h1{
 }
 
 .bright {
-    background: #2ecc71;
+    background: #f39c12;
     color:#fff;
+}
+
+.panel-body {
+    background:#fff;
+}
+
+
+.inBox-text{
+    color: #3182bd
+
+}
+
+.imgGlob{
+    width: 500px;
+    height: 500px;
+}
+
+.footerLink{
+    color: #000000;
 }
