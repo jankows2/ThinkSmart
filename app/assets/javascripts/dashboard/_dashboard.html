@@ -19,159 +19,42 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header" ng-controller="NavCtrl">Dashboard: {{ user.username }}</h1>
-
-            <div class="row placeholders">
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-if="dataReady">
+            <barchart data="{{dataGraph}}"></barchart>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Enter result:</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" ng-model="result" placeholder="Result">
             </div>
-
-            <h2 class="sub-header">Section title</h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>No. of Tries</th>
-                        <th>Quiz Name</th>
-                        <th>Result</th>
-                        <th>Exam Name</th>
-                        <th>Exam Results</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Fresh Blood</td>
-                        <td>100%</td>
-                        <td>First Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>No Joke</td>
-                        <td>100%</td>
-                        <td>Second Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mark's quiz</td>
-                        <td>79%</td>
-                        <td>Getting Serious</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Fresh Blood</td>
-                        <td>100%</td>
-                        <td>First Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mark's quiz</td>
-                        <td>79%</td>
-                        <td>Getting Serious</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>No Joke</td>
-                        <td>100%</td>
-                        <td>Second Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mark's quiz</td>
-                        <td>79%</td>
-                        <td>Getting Serious</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>No Joke</td>
-                        <td>100%</td>
-                        <td>Second Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Fresh Blood</td>
-                        <td>100%</td>
-                        <td>First Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Fresh Blood</td>
-                        <td>100%</td>
-                        <td>First Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>No Joke</td>
-                        <td>100%</td>
-                        <td>Second Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mark's quiz</td>
-                        <td>79%</td>
-                        <td>Getting Serious</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>No Joke</td>
-                        <td>100%</td>
-                        <td>Second Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mark's quiz</td>
-                        <td>79%</td>
-                        <td>Getting Serious</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>No Joke</td>
-                        <td>100%</td>
-                        <td>Second Exam</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mark's quiz</td>
-                        <td>79%</td>
-                        <td>Getting Serious</td>
-                        <td>85%</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+            <button class="btn btn-primary" ng-click="submitResult()">Submit</button>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Result</th>
+                    <th>Time</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tr data-ng-repeat="quizz in quizzes" >
+                    <td>
+                        {{quizz.id}}
+                    </td>
+                    <td>
+                        {{quizz.quizz}}
+                    </td>
+                    <td>
+                        {{quizz.created_at}}
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" ng-click="deleteResult(quizz.id, $index)">Delete</button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>

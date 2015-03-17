@@ -24,6 +24,9 @@ gem 'responders', '~> 2.0'
 # Set up devise for use authentication
 gem 'devise', '~> 3.4.0'
 
+gem 'd3-rails'
+gem 'jasmine', github: 'pivotal/jasmine-gem'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

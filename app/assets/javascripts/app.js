@@ -22,7 +22,7 @@ function($stateProvider, $urlRouterProvider) {
     .state('dashboard',{
       url: '/dashboard',
       templateUrl: 'dashboard/_dashboard.html',
-      controller: 'MainCtrl'
+      controller: 'dashboardCtrl'
     })
     .state('home', {
       resolve: {

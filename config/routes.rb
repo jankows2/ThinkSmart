@@ -16,8 +16,9 @@ Rails.application.routes.draw do
     member do
       put '/upvote' => 'posts#upvote'
     end
-  end
+end
 
+resources :quizz, defaults: { format: 'json' }, only: [:index, :show, :create, :destroy, :delete]
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
